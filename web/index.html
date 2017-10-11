@@ -56,11 +56,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9">
-            <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">How much do you commit at a time ?</h2>
-            <p class="lead">You have made XX commits, adding XX lines, deleted XX, for a total of XXX.</p>
-            <p class="lead">That's an average of XX lines modified per commit.</p>
+            <p class="lead" id="commitStats">
+              You have made XX commits, adding XX lines, deleted XX, for a total of XXX.<br/><br/>
+              That's an average of XX lines modified per commit.
+            </p>
+            
           </div>
         </div>
 
@@ -73,11 +75,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9">
-            <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">How long are your commit message ?</h2>
-            <p class="lead">You have made XX commits, containing a total of XX words of commits message.</p>
-            <p class="lead">That's an average of XX words of message per commit.</p>
+            <p class="lead" id="messageStats">
+              You have made XX commits, containing a total of XX words of commit message.<br/><br/>
+              That's an average of XX words of message per commit.</p>
           </div>
         </div>
 
@@ -113,6 +115,9 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom script -->
+    <script src="js/loadData.js"></script>
 
   </body>
 
