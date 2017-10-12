@@ -1,5 +1,5 @@
-[
-  {
+{
+  "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
       "nbCommits": 111,
@@ -63,4 +63,4 @@
       }
     }
   }
-]
+}
