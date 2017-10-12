@@ -7,8 +7,8 @@ function fillData() {
     `);
 
     $('#messageStats').text(`
-    You have made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. \n\n
-    That's an average of ${json[currentUser].statsGlobal.nbWordsMessagePerCommit} words of message per commit.
+      You have made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. \n\n
+      That's an average of ${json[currentUser].statsGlobal.nbWordsMessagePerCommit} words of message per commit.
     `);
   });
 }
