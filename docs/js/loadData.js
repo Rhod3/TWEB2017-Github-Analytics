@@ -1,4 +1,4 @@
-function fillData() {
+function fillData(currentUser) {
   const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
 
@@ -24,7 +24,7 @@ function fillData() {
   });
 
   // Create graph with chart.js
-  var ctx = document.getElementById('myChart').getContext('2d');
+  var ctx = document.getElementById('commitStatsChart').getContext('2d');
   var chart = new Chart(ctx, {
       // The type of chart we want to create
       type: 'line',
@@ -45,4 +45,4 @@ function fillData() {
   });
 }
 
-fillData();
+fillData("Rhod3");
