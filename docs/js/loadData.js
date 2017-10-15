@@ -40,8 +40,8 @@ function fillData() {
     };
 
     for (var key in json[currentUser].stats) {
-      data.labels.push(key);
-      data.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
+      userData.labels.push(key);
+      userData.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
     }
     // Creation of the chart
     var chart = new Chart(ctx, {
