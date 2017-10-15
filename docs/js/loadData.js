@@ -31,7 +31,7 @@ function fillData() {
     // Generated graph with chart.js
     var ctx = document.getElementById('commitStatsChart').getContext('2d');
     // The data for our dataset
-    let data = {
+    let userData = {
       labels: [],
       datasets: [{
         label: "Total number of lines modified per commit per language",
