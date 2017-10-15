@@ -1,4 +1,4 @@
-function fillData(currentUser) {
+function fillData() {
   const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
 
@@ -45,4 +45,4 @@ function fillData(currentUser) {
   });
 }
 
-fillData("Rhod3");
+fillData();
