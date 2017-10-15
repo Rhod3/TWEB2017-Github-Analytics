@@ -2,8 +2,10 @@ function fillData() {
   const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
 
+    console.log(Object.keys(json));
+
     for (var i in Object.keys(json)) {
-      $('#mySelect').append($('<option>', { 
+      $('#userSelect').append($('<option>', { 
         value: i,
         text : i 
       }));
