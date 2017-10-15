@@ -5,6 +5,7 @@ function fillData() {
     console.log(Object.keys(json));
 
     for (var i in Object.keys(json)) {
+      console.log(i);
       $('#userSelect').append($('<option>', { 
         value: i,
         text : i 
