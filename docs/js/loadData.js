@@ -29,24 +29,44 @@ function fillData() {
   
 
     // Generated graph with chart.js
+
+    // Data for the stats
     var ctx = document.getElementById('commitStatsChart').getContext('2d');
-    // The data for our dataset
-    let userData = {
+    let userStatsData = {
       labels: [],
       datasets: [{
-        label: "Total number of lines modified per commit per language",
+        label: "Number of lines modified per commit",
         data: [],
       }]
     };
-
     for (var key in json[currentUser].stats) {
-      userData.labels.push(key);
-      userData.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
+      userStatsData.labels.push(key);
+      userStatsData.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
     }
     // Creation of the chart
     var chart = new Chart(ctx, {
         type: 'bar',
-        data: userData,
+        data: userStatsData,
+        options: {}
+    });
+
+    // Date for the message chart
+    var ctx2 = document.getElementById('commitMessageChart').getContext('2d');
+    let userMessageData = {
+      labels: [],
+      datasets: [{
+        label: "Number of words per commit",
+        data: [],
+      }]
+    };
+    for (var key in json[currentUser].stats) {
+      userMessageData.labels.push(key);
+      userMessageData.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
+    }
+    // Creation of the chart
+    var chart = new Chart(ctx2, {
+        type: 'bar',
+        data: userMessageData,
         options: {}
     });
   });
