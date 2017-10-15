@@ -2,12 +2,12 @@ function fillData() {
   const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
 
-    $.each(json, function (i, item) {
-      $('#userSelect').append($('<option>', { 
-        value: item.value,
-        text : item.text 
+    for (var i in Object.keys(json)) {
+      $('#mySelect').append($('<option>', { 
+        value: i,
+        text : i 
       }));
-    });
+    }
 
     $('#commitStats').text(`
       You have made ${json[currentUser].statsGlobal.nbCommits} commits, adding ${json[currentUser].statsGlobal.nbAdd} lines, deleted ${json[currentUser].statsGlobal.nbDelete}, for a total of ${json[currentUser].statsGlobal.nbTotal}. \n\n 
