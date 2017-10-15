@@ -3,10 +3,10 @@ function fillSelectWithUser() {
     console.log(Object.keys(json));
     
         for (var i in Object.keys(json)) {
-          console.log(i);
+          console.log(i.value);
           $('#userSelect').append($('<option>', { 
-            value: i,
-            text : i 
+            value: i.value,
+            text : i.value 
           }));
         }
   });
@@ -61,7 +61,7 @@ function fillData() {
     };
     for (var key in json[currentUser].stats) {
       userMessageData.labels.push(key);
-      userMessageData.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
+      userMessageData.datasets[0].data.push(json[currentUser].stats[key].nbWordsMessagePerCommit);
     }
     // Creation of the chart
     var chart = new Chart(ctx2, {
