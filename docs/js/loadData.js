@@ -1,6 +1,14 @@
 function fillSelectWithUser() {
   $.getJSON('data/data.json', (json) => {
-
+    console.log(Object.keys(json));
+    
+        for (var i in Object.keys(json)) {
+          console.log(i);
+          $('#userSelect').append($('<option>', { 
+            value: i,
+            text : i 
+          }));
+        }
   });
 }
 
@@ -8,45 +16,37 @@ function fillData() {
   const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
 
-    console.log(Object.keys(json));
-
-    for (var i in Object.keys(json)) {
-      console.log(i);
-      $('#userSelect').append($('<option>', { 
-        value: i,
-        text : i 
-      }));
-    }
-
-    $('#commitStats').text(`
-      You have made ${json[currentUser].statsGlobal.nbCommits} commits, adding ${json[currentUser].statsGlobal.nbAdd} lines, deleted ${json[currentUser].statsGlobal.nbDelete}, for a total of ${json[currentUser].statsGlobal.nbTotal}. \n\n 
+    // Generate text
+    $('#commitStats').html(`
+      You have made ${json[currentUser].statsGlobal.nbCommits} commits, adding ${json[currentUser].statsGlobal.nbAdd} lines, deleted ${json[currentUser].statsGlobal.nbDelete}, for a total of ${json[currentUser].statsGlobal.nbTotal}. <br><br> 
       That's an average of ${json[currentUser].statsGlobal.nbTotalPerCommit} lines modified per commit.
     `);
 
-    $('#messageStats').text(`
-      You have made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. \n\n
+    $('#messageStats').html(`
+      You have made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br><br>
       That's an average of ${json[currentUser].statsGlobal.nbWordsMessagePerCommit} words of message per commit.
     `);
   
 
-    // Create graph with chart.js
+    // Generated graph with chart.js
     var ctx = document.getElementById('commitStatsChart').getContext('2d');
+    // The data for our dataset
+    let data = {
+      labels: [],
+      datasets: [{
+        label: "Total number of lines modified per commit per language",
+        data: [],
+      }]
+    };
+
+    for (var key in json[currentUser].stats) {
+      data.labels.push(key);
+      data.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
+    }
+    // Creation of the chart
     var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-    
-        // The data for our dataset
-        data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [{
-                label: "My First dataset",
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
-                data: [0, 10, 5, 2, 20, 30, 45],
-            }]
-        },
-    
-        // Configuration options go here
+        type: 'bar',
+        data: userData,
         options: {}
     });
   });
