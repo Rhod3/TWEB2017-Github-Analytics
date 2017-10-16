@@ -1,4 +1,4 @@
-function fillSelectWithUser() {
+function initSelect() {
   $.getJSON('data/data.json', (json) => {
     
     const users = Object.keys(json);
@@ -11,11 +11,16 @@ function fillSelectWithUser() {
             text : users[i] 
           }));
         }
+
+        $('#userSelect').on('change', function() {
+          fillData(this.value);
+        })
+        fillData("Rhod3");
   });
 }
 
-function fillData() {
-  const currentUser = "Rhod3";
+function fillData(currentUser) {
+  // const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
 
     // Generate text
@@ -48,6 +53,7 @@ function fillData() {
     // Creation of the chart
     var chart = new Chart(ctx, {
         type: 'bar',
+        fillColor : "blue",
         data: userStatsData,
         options: {}
     });
@@ -68,11 +74,11 @@ function fillData() {
     // Creation of the chart
     var chart = new Chart(ctx2, {
         type: 'bar',
+        fillColor : "blue",
         data: userMessageData,
         options: {}
     });
   });
 }
 
-fillData();
-fillSelectWithUser();
+initSelect();
