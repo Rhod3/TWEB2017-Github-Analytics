@@ -1,12 +1,14 @@
 function fillSelectWithUser() {
   $.getJSON('data/data.json', (json) => {
-    console.log(Object.keys(json));
     
-        for (var i in Object.keys(json)) {
-          console.log(i.value);
+    const users = Object.keys(json);
+    console.log(users);
+
+        for (var i in users) {
+          console.log(users[i]);
           $('#userSelect').append($('<option>', { 
-            value: i.value,
-            text : i.value 
+            value: users[i],
+            text : users[i] 
           }));
         }
   });
