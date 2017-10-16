@@ -14,8 +14,7 @@ function initSelect() {
 
         $('#userSelect').on('change', function() {
           fillData(this.value);
-        })
-        fillData("Rhod3");
+        });
   });
 }
 
@@ -23,19 +22,27 @@ function fillData(currentUser) {
   // const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
 
-    // Generate text
-    $('#commitStats').html(`
-      You have made ${json[currentUser].statsGlobal.nbCommits} commits, adding ${json[currentUser].statsGlobal.nbAdd} lines, deleted ${json[currentUser].statsGlobal.nbDelete}, for a total of ${json[currentUser].statsGlobal.nbTotal}. <br><br> 
-      That's an average of ${json[currentUser].statsGlobal.nbTotalPerCommit} lines modified per commit.
+    // Generate texts
+    $('#commitStatsTitle').html(`
+    How much do ${currentUser} commit at a time ?
+    `);
+    $('#messageStatsTitle').html(`
+    How long are ${currentUser} commit message ?
     `);
 
+    $('#commitStats').html(`
+      You have made ${json[currentUser].statsGlobal.nbCommits} commits, adding <span style="color:green;">${json[currentUser].statsGlobal.nbAdd}</span> lines, 
+        deleted <span style="color:red;">${json[currentUser].statsGlobal.nbDelete}</span>, 
+        for a total of <span style="color:blue;">${json[currentUser].statsGlobal.nbTotal}</span>. <br><br> 
+      That's an average of ${json[currentUser].statsGlobal.nbTotalPerCommit} lines modified per commit.
+    `);
     $('#messageStats').html(`
       You have made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br><br>
-      That's an average of ${json[currentUser].statsGlobal.nbWordsMessagePerCommit} words of message per commit.
+      That's an average of <span style="color:blue;">${json[currentUser].statsGlobal.nbWordsMessagePerCommit}</span> words of message per commit.
     `);
   
 
-    // Generated graph with chart.js
+    // Generate graph with chart.js
 
     // Data for the stats
     var ctx = document.getElementById('commitStatsChart').getContext('2d');
@@ -58,7 +65,7 @@ function fillData(currentUser) {
         options: {}
     });
 
-    // Date for the message chart
+    // Data for the message chart
     var ctx2 = document.getElementById('commitMessageChart').getContext('2d');
     let userMessageData = {
       labels: [],
