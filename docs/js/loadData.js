@@ -15,6 +15,7 @@ function initSelect() {
         $('#userSelect').on('change', function() {
           fillData(this.value);
         });
+        fillData("Rhod3");
   });
 }
 
