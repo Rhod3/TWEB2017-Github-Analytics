@@ -1,27 +1,16 @@
 {
-  "wasadigi": {},
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 143,
-      "nbWordsMessage": 569,
-      "nbAdd": 565700,
-      "nbDelete": 433570,
-      "nbTotal": 999270,
+      "nbCommits": 145,
+      "nbWordsMessage": 582,
+      "nbAdd": 565719,
+      "nbDelete": 433588,
+      "nbTotal": 999307,
       "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "6987.9"
+      "nbTotalPerCommit": "6891.8"
     },
     "stats": {
-      "Python": {
-        "language": "Python",
-        "nbCommit": 9,
-        "nbWordsMessage": 23,
-        "nbAdd": 640,
-        "nbDelete": 186,
-        "nbTotal": 826,
-        "nbWordsMessagePerCommit": "2.6",
-        "nbTotalPerCommit": "91.8"
-      },
       "Java": {
         "language": "Java",
         "nbCommit": 53,
@@ -32,16 +21,6 @@
         "nbWordsMessagePerCommit": "4.1",
         "nbTotalPerCommit": "1267.6"
       },
-      "JavaScript": {
-        "language": "JavaScript",
-        "nbCommit": 24,
-        "nbWordsMessage": 97,
-        "nbAdd": 395435,
-        "nbDelete": 393935,
-        "nbTotal": 789370,
-        "nbWordsMessagePerCommit": "4.0",
-        "nbTotalPerCommit": "32890.4"
-      },
       "CSS": {
         "language": "CSS",
         "nbCommit": 26,
@@ -51,6 +30,26 @@
         "nbTotal": 34407,
         "nbWordsMessagePerCommit": "4.5",
         "nbTotalPerCommit": "1323.3"
+      },
+      "Python": {
+        "language": "Python",
+        "nbCommit": 9,
+        "nbWordsMessage": 23,
+        "nbAdd": 640,
+        "nbDelete": 186,
+        "nbTotal": 826,
+        "nbWordsMessagePerCommit": "2.6",
+        "nbTotalPerCommit": "91.8"
+      },
+      "JavaScript": {
+        "language": "JavaScript",
+        "nbCommit": 24,
+        "nbWordsMessage": 97,
+        "nbAdd": 395435,
+        "nbDelete": 393935,
+        "nbTotal": 789370,
+        "nbWordsMessagePerCommit": "4.0",
+        "nbTotalPerCommit": "32890.4"
       }
     }
   }
