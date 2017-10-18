@@ -65,9 +65,17 @@ function fillData(currentUser) {
     }
     statsChart = new Chart(ctx, {
         type: 'bar',
-        fillColor : "blue",
+        backgroundColor : 'blue',
         data: userStatsData,
-        options: {}
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
     });
 
     // Data for the message chart
@@ -89,9 +97,17 @@ function fillData(currentUser) {
     }
     messageChart = new Chart(ctx2, {
         type: 'bar',
-        fillColor : "blue",
+        backgroundColor : 'blue',
         data: userMessageData,
-        options: {}
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
     });
   });
 }
