@@ -1,23 +1,25 @@
 function initSelect() {
   $.getJSON('data/data.json', (json) => {
-    
     const users = Object.keys(json);
     console.log(users);
 
-        for (var i in users) {
-          console.log(users[i]);
-          $('#userSelect').append($('<option>', { 
-            value: users[i],
-            text : users[i] 
-          }));
-        }
+    for (var i in users) {
+      console.log(users[i]);
+      $('#userSelect').append($('<option>', { 
+        value: users[i],
+        text : users[i] 
+      }));
+    }
 
-        $('#userSelect').on('change', function() {
-          fillData(this.value);
-        });
-        fillData("Rhod3");
+    $('#userSelect').on('change', function() {
+      fillData(this.value);
+    });
   });
 }
+
+// Keep reference to chart
+var statsChart;
+var messageChart;
 
 function fillData(currentUser) {
   // const currentUser = "Rhod3";
@@ -32,16 +34,15 @@ function fillData(currentUser) {
     `);
 
     $('#commitStats').html(`
-      You have made ${json[currentUser].statsGlobal.nbCommits} commits, adding <span style="color:green;">${json[currentUser].statsGlobal.nbAdd}</span> lines, 
+      ${currentUser} has made ${json[currentUser].statsGlobal.nbCommits} commits, adding <span style="color:green;">${json[currentUser].statsGlobal.nbAdd}</span> lines, 
         deleted <span style="color:red;">${json[currentUser].statsGlobal.nbDelete}</span>, 
         for a total of <span style="color:blue;">${json[currentUser].statsGlobal.nbTotal}</span>. <br><br> 
       That's an average of ${json[currentUser].statsGlobal.nbTotalPerCommit} lines modified per commit.
     `);
     $('#messageStats').html(`
-      You have made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br><br>
+      ${currentUser} has made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br><br>
       That's an average of <span style="color:blue;">${json[currentUser].statsGlobal.nbWordsMessagePerCommit}</span> words of message per commit.
     `);
-  
 
     // Generate graph with chart.js
 
@@ -59,7 +60,10 @@ function fillData(currentUser) {
       userStatsData.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
     }
     // Creation of the chart
-    var chart = new Chart(ctx, {
+    if (statsChart) {
+      statsChart.destroy();
+    }
+    statsChart = new Chart(ctx, {
         type: 'bar',
         fillColor : "blue",
         data: userStatsData,
@@ -80,7 +84,10 @@ function fillData(currentUser) {
       userMessageData.datasets[0].data.push(json[currentUser].stats[key].nbWordsMessagePerCommit);
     }
     // Creation of the chart
-    var chart = new Chart(ctx2, {
+    if (messageChart) {
+      messageChart.destroy();
+    }
+    messageChart = new Chart(ctx2, {
         type: 'bar',
         fillColor : "blue",
         data: userMessageData,
