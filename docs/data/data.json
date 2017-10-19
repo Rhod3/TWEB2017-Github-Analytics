@@ -46,13 +46,13 @@
   "Bertral": {
     "user": "Bertral",
     "statsGlobal": {
-      "nbCommits": 152,
-      "nbWordsMessage": 515,
-      "nbAdd": 667713,
+      "nbCommits": 153,
+      "nbWordsMessage": 517,
+      "nbAdd": 667714,
       "nbDelete": 42896,
-      "nbTotal": 710609,
+      "nbTotal": 710610,
       "nbWordsMessagePerCommit": "3.4",
-      "nbTotalPerCommit": "4675.1"
+      "nbTotalPerCommit": "4644.5"
     },
     "stats": {
       "Java": {
@@ -77,13 +77,13 @@
       },
       "JavaScript": {
         "language": "JavaScript",
-        "nbCommit": 5,
-        "nbWordsMessage": 8,
-        "nbAdd": 362,
+        "nbCommit": 6,
+        "nbWordsMessage": 10,
+        "nbAdd": 363,
         "nbDelete": 38,
-        "nbTotal": 400,
-        "nbWordsMessagePerCommit": "1.6",
-        "nbTotalPerCommit": "80.0"
+        "nbTotal": 401,
+        "nbWordsMessagePerCommit": "1.7",
+        "nbTotalPerCommit": "66.8"
       },
       "CSS": {
         "language": "CSS",
@@ -110,13 +110,13 @@
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 171,
-      "nbWordsMessage": 683,
-      "nbAdd": 568250,
-      "nbDelete": 434229,
-      "nbTotal": 1002479,
+      "nbCommits": 172,
+      "nbWordsMessage": 687,
+      "nbAdd": 568256,
+      "nbDelete": 434235,
+      "nbTotal": 1002491,
       "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "5862.5"
+      "nbTotalPerCommit": "5828.4"
     },
     "stats": {
       "Java": {
