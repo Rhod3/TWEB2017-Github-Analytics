@@ -75,16 +75,6 @@
         "nbWordsMessagePerCommit": "3.5",
         "nbTotalPerCommit": "5278.6"
       },
-      "JavaScript": {
-        "language": "JavaScript",
-        "nbCommit": 5,
-        "nbWordsMessage": 8,
-        "nbAdd": 362,
-        "nbDelete": 38,
-        "nbTotal": 400,
-        "nbWordsMessagePerCommit": "1.6",
-        "nbTotalPerCommit": "80.0"
-      },
       "CSS": {
         "language": "CSS",
         "nbCommit": 15,
@@ -94,6 +84,16 @@
         "nbTotal": 57112,
         "nbWordsMessagePerCommit": "2.3",
         "nbTotalPerCommit": "3807.5"
+      },
+      "JavaScript": {
+        "language": "JavaScript",
+        "nbCommit": 5,
+        "nbWordsMessage": 8,
+        "nbAdd": 362,
+        "nbDelete": 38,
+        "nbTotal": 400,
+        "nbWordsMessagePerCommit": "1.6",
+        "nbTotalPerCommit": "80.0"
       },
       "HTML": {
         "language": "HTML",
@@ -110,25 +110,15 @@
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 162,
-      "nbWordsMessage": 653,
-      "nbAdd": 568108,
-      "nbDelete": 434083,
-      "nbTotal": 1002191,
+      "nbCommits": 163,
+      "nbWordsMessage": 657,
+      "nbAdd": 568134,
+      "nbDelete": 434109,
+      "nbTotal": 1002243,
       "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "6186.4"
+      "nbTotalPerCommit": "6148.7"
     },
     "stats": {
-      "Python": {
-        "language": "Python",
-        "nbCommit": 9,
-        "nbWordsMessage": 23,
-        "nbAdd": 640,
-        "nbDelete": 186,
-        "nbTotal": 826,
-        "nbWordsMessagePerCommit": "2.6",
-        "nbTotalPerCommit": "91.8"
-      },
       "Java": {
         "language": "Java",
         "nbCommit": 53,
@@ -138,6 +128,16 @@
         "nbTotal": 67184,
         "nbWordsMessagePerCommit": "4.1",
         "nbTotalPerCommit": "1267.6"
+      },
+      "Python": {
+        "language": "Python",
+        "nbCommit": 9,
+        "nbWordsMessage": 23,
+        "nbAdd": 640,
+        "nbDelete": 186,
+        "nbTotal": 826,
+        "nbWordsMessagePerCommit": "2.6",
+        "nbTotalPerCommit": "91.8"
       },
       "JavaScript": {
         "language": "JavaScript",
