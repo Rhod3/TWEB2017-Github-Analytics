@@ -68,6 +68,31 @@ function fillData(currentUser) {
           }
         }
     });
+
+    var myConfig = {
+      "graphset":[
+      {
+      "type":"wordcloud",
+      "options": {
+        "style": {
+          "tooltip": {
+            visible: true,
+            text: '%text: %hits'
+          }
+        },
+      "words": json[currentUser].statsGlobal.messages
+      }
+      }
+    ]
+    };
+     
+    zingchart.render({ 
+      id: 'cloudWordChart', 
+      data: myConfig, 
+      height: '100%', 
+      width: '100%' 
+    });
+
   });
 }
 
