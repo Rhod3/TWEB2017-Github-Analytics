@@ -26,19 +26,10 @@ function fillData(currentUser) {
   $.getJSON('data/data.json', (json) => {
 
     // Generate texts
-    $('#commitStatsTitle').html(`
-    How much do ${currentUser} commit at a time ?
-    `);
     $('#messageStatsTitle').html(`
     How long are ${currentUser} commit message ?
     `);
 
-    $('#commitStats').html(`
-      ${currentUser} has made ${json[currentUser].statsGlobal.nbCommits} commits, adding <span style="color:green;">${json[currentUser].statsGlobal.nbAdd}</span> lines, 
-        deleted <span style="color:red;">${json[currentUser].statsGlobal.nbDelete}</span>, 
-        for a total of <span style="color:blue;">${json[currentUser].statsGlobal.nbTotal}</span>. <br><br> 
-      That's an average of ${json[currentUser].statsGlobal.nbTotalPerCommit} lines modified per commit.
-    `);
     $('#messageStats').html(`
       ${currentUser} has made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br><br>
       That's an average of <span style="color:blue;">${json[currentUser].statsGlobal.nbWordsMessagePerCommit}</span> words of message per commit.
@@ -46,40 +37,8 @@ function fillData(currentUser) {
 
     // Generate graph with chart.js
 
-    // Data for the stats
-    var ctx = document.getElementById('commitStatsChart').getContext('2d');
-    let userStatsData = {
-      labels: [],
-      datasets: [{
-        label: "Number of lines modified per commit",
-        data: [],
-      }]
-    };
-    for (var key in json[currentUser].stats) {
-      userStatsData.labels.push(key);
-      userStatsData.datasets[0].data.push(json[currentUser].stats[key].nbTotalPerCommit);
-    }
-    // Creation of the chart
-    if (statsChart) {
-      statsChart.destroy();
-    }
-    statsChart = new Chart(ctx, {
-        type: 'bar',
-        backgroundColor : 'blue',
-        data: userStatsData,
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
-    });
-
     // Data for the message chart
-    var ctx2 = document.getElementById('commitMessageChart').getContext('2d');
+    var ctx = document.getElementById('commitMessageChart').getContext('2d');
     let userMessageData = {
       labels: [],
       datasets: [{
@@ -95,7 +54,7 @@ function fillData(currentUser) {
     if (messageChart) {
       messageChart.destroy();
     }
-    messageChart = new Chart(ctx2, {
+    messageChart = new Chart(ctx, {
         type: 'bar',
         backgroundColor : 'blue',
         data: userMessageData,
