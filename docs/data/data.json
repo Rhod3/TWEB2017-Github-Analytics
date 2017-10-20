@@ -2,24 +2,24 @@
   "lognaume": {
     "user": "lognaume",
     "statsGlobal": {
-      "nbCommits": 356,
-      "nbWordsMessage": 1368,
-      "nbAdd": 165713,
-      "nbDelete": 77756,
-      "nbTotal": 243469,
+      "nbCommits": 358,
+      "nbWordsMessage": 1373,
+      "nbAdd": 165922,
+      "nbDelete": 77829,
+      "nbTotal": 243751,
       "nbWordsMessagePerCommit": "3.8",
-      "nbTotalPerCommit": "683.9"
+      "nbTotalPerCommit": "680.9"
     },
     "stats": {
       "Java": {
         "language": "Java",
-        "nbCommit": 340,
-        "nbWordsMessage": 1305,
-        "nbAdd": 91399,
-        "nbDelete": 19122,
-        "nbTotal": 110521,
+        "nbCommit": 342,
+        "nbWordsMessage": 1310,
+        "nbAdd": 91608,
+        "nbDelete": 19195,
+        "nbTotal": 110803,
         "nbWordsMessagePerCommit": "3.8",
-        "nbTotalPerCommit": "325.1"
+        "nbTotalPerCommit": "324.0"
       },
       "CSS": {
         "language": "CSS",
@@ -55,16 +55,6 @@
       "nbTotalPerCommit": "4644.5"
     },
     "stats": {
-      "C++": {
-        "language": "C++",
-        "nbCommit": 20,
-        "nbWordsMessage": 66,
-        "nbAdd": 14991,
-        "nbDelete": 283,
-        "nbTotal": 15274,
-        "nbWordsMessagePerCommit": "3.3",
-        "nbTotalPerCommit": "763.7"
-      },
       "Java": {
         "language": "Java",
         "nbCommit": 97,
@@ -74,6 +64,16 @@
         "nbTotal": 512020,
         "nbWordsMessagePerCommit": "3.5",
         "nbTotalPerCommit": "5278.6"
+      },
+      "C++": {
+        "language": "C++",
+        "nbCommit": 20,
+        "nbWordsMessage": 66,
+        "nbAdd": 14991,
+        "nbDelete": 283,
+        "nbTotal": 15274,
+        "nbWordsMessagePerCommit": "3.3",
+        "nbTotalPerCommit": "763.7"
       },
       "JavaScript": {
         "language": "JavaScript",
@@ -110,13 +110,13 @@
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 217,
-      "nbWordsMessage": 858,
-      "nbAdd": 569093,
-      "nbDelete": 435037,
-      "nbTotal": 1004130,
+      "nbCommits": 218,
+      "nbWordsMessage": 862,
+      "nbAdd": 569109,
+      "nbDelete": 435053,
+      "nbTotal": 1004162,
       "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "4627.3"
+      "nbTotalPerCommit": "4606.2"
     },
     "stats": {
       "Java": {
