@@ -55,16 +55,6 @@
       "nbTotalPerCommit": "4644.5"
     },
     "stats": {
-      "Java": {
-        "language": "Java",
-        "nbCommit": 97,
-        "nbWordsMessage": 340,
-        "nbAdd": 503243,
-        "nbDelete": 8777,
-        "nbTotal": 512020,
-        "nbWordsMessagePerCommit": "3.5",
-        "nbTotalPerCommit": "5278.6"
-      },
       "C++": {
         "language": "C++",
         "nbCommit": 20,
@@ -74,6 +64,16 @@
         "nbTotal": 15274,
         "nbWordsMessagePerCommit": "3.3",
         "nbTotalPerCommit": "763.7"
+      },
+      "Java": {
+        "language": "Java",
+        "nbCommit": 97,
+        "nbWordsMessage": 340,
+        "nbAdd": 503243,
+        "nbDelete": 8777,
+        "nbTotal": 512020,
+        "nbWordsMessagePerCommit": "3.5",
+        "nbTotalPerCommit": "5278.6"
       },
       "JavaScript": {
         "language": "JavaScript",
@@ -110,13 +110,13 @@
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 216,
-      "nbWordsMessage": 854,
-      "nbAdd": 569087,
-      "nbDelete": 435031,
-      "nbTotal": 1004118,
+      "nbCommits": 217,
+      "nbWordsMessage": 858,
+      "nbAdd": 569093,
+      "nbDelete": 435037,
+      "nbTotal": 1004130,
       "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "4648.7"
+      "nbTotalPerCommit": "4627.3"
     },
     "stats": {
       "Java": {
