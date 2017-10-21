@@ -37,7 +37,7 @@ function fillData(currentUser) {
 
     $('#wordCloudText').html(`
       And here is a cloud word from all the commit message of ${currentUser}. <br><br>
-      You can hover on them to see how many times they appear in your commit message.
+      You can hover on them to see how many times they appear in your messages.
     `);
 
     // Generate graph with chart.js
@@ -82,7 +82,7 @@ function fillData(currentUser) {
       type: 'wordcloud',
       options: {
         text: json[currentUser].statsGlobal.messages,
-        minLength: 2,
+        minLength: 3,
         ignore: ['Merge', 'branch', '\'master\''],
         maxItems: 50,
         aspect: 'flow-center',
@@ -91,7 +91,7 @@ function fillData(currentUser) {
         palette: ['#D32F2F','#5D4037','#1976D2','#E53935','#6D4C41','#1E88E5','#F44336','#795548','#2196F3','#EF5350','#8D6E63','#42A5F5'],
         
         style: {
-          fontFamily: 'Crete Round',
+          fontFamily: 'Lato',
           
           hoverState: {
             backgroundColor: '#D32F2F',
