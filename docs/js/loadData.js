@@ -27,12 +27,17 @@ function fillData(currentUser) {
 
     // Generate texts
     $('#messageStatsTitle').html(`
-    How long are ${currentUser} commit message ?
+      How long are ${currentUser} commit message ?
     `);
 
     $('#messageStats').html(`
       ${currentUser} has made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br><br>
       That's an average of <span style="color:blue;">${json[currentUser].statsGlobal.nbWordsMessagePerCommit}</span> words of message per commit.
+    `);
+
+    $('#wordCloudText').html(`
+      And here is a cloud word from all the commit message of ${currentUser}. <br><br>
+      You can hover on them to see how many times they appear in your commit message.
     `);
 
     // Generate graph with chart.js
@@ -42,7 +47,7 @@ function fillData(currentUser) {
     let userMessageData = {
       labels: [],
       datasets: [{
-        label: "Number of words per commit",
+        label: 'Number of words per commit',
         data: [],
       }]
     };
@@ -50,10 +55,11 @@ function fillData(currentUser) {
       userMessageData.labels.push(key);
       userMessageData.datasets[0].data.push(json[currentUser].stats[key].nbWordsMessagePerCommit);
     }
-    // Creation of the chart
+    // Destroy the previous chart if it exists
     if (messageChart) {
       messageChart.destroy();
     }
+    // Create the chart
     messageChart = new Chart(ctx, {
         type: 'bar',
         backgroundColor : 'blue',
@@ -76,8 +82,8 @@ function fillData(currentUser) {
       type: 'wordcloud',
       options: {
         text: json[currentUser].statsGlobal.messages,
-        minLength: 5,
-        ignore: ["Merge", "branch", "\'master\'"],
+        minLength: 2,
+        ignore: ['Merge', 'branch', '\'master\''],
         maxItems: 50,
         aspect: 'flow-center',
         rotate: true,
