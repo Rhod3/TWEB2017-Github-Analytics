@@ -110,13 +110,13 @@
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 220,
-      "nbWordsMessage": 870,
-      "nbAdd": 569155,
-      "nbDelete": 435099,
-      "nbTotal": 1004254,
+      "nbCommits": 223,
+      "nbWordsMessage": 884,
+      "nbAdd": 569294,
+      "nbDelete": 435160,
+      "nbTotal": 1004454,
       "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "4564.8"
+      "nbTotalPerCommit": "4504.3"
     },
     "stats": {
       "Java": {
