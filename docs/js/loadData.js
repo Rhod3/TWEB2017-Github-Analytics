@@ -37,7 +37,7 @@ function fillData(currentUser) {
 
     $('#wordCloudText').html(`
       And here is a cloud word from all the commit message of ${currentUser}. <br><br>
-      You can hover on them to see how many times they appear in your messages.
+      You can hover on them to see how many times they appear in his messages.
     `);
 
     // Generate graph with chart.js
@@ -84,7 +84,7 @@ function fillData(currentUser) {
         text: json[currentUser].statsGlobal.messages,
         minLength: 3,
         ignore: ['Merge', 'branch', '\'master\''],
-        maxItems: 50,
+        maxItems: 60,
         aspect: 'flow-center',
         rotate: true,
         colorType: 'palette',
