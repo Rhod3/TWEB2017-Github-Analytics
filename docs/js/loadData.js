@@ -31,13 +31,14 @@ function fillData(currentUser) {
     `);
 
     $('#messageStats').html(`
-      ${currentUser} has made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br><br>
-      That's an average of <span style="color:blue;">${json[currentUser].statsGlobal.nbWordsMessagePerCommit}</span> words of message per commit.
+      ${currentUser} has made ${json[currentUser].statsGlobal.nbCommits} commits, containing a total of ${json[currentUser].statsGlobal.nbWordsMessage} words of commit message. <br>
+      That's an average of <span style="color:blue;">${json[currentUser].statsGlobal.nbWordsMessagePerCommit}</span> words of message per commit. <br><br>
+      Below is a graph showing how many words are in your commit messages for each language, so you can see if ${currentUser} is more verbose in Javascript or C++ for example :)
     `);
 
     $('#wordCloudText').html(`
-      And here is a cloud word from all the commit message of ${currentUser}. <br><br>
-      You can hover on them to see how many times they appear in his messages.
+      And here is a cloud word from all the commit messages of ${currentUser}. <br>
+      You can hover on them to see how many times they appear in all his messages.
     `);
 
     // Generate graph with chart.js
@@ -83,10 +84,9 @@ function fillData(currentUser) {
       options: {
         text: json[currentUser].statsGlobal.messages,
         minLength: 3,
-        ignore: ['Merge', 'branch', '\'master\''],
+        ignore: ['Merge', 'branch', '\'master\'', 'and', 'for', 'the'],
         maxItems: 60,
         aspect: 'flow-center',
-        rotate: true,
         colorType: 'palette',
         palette: ['#D32F2F','#5D4037','#1976D2','#E53935','#6D4C41','#1E88E5','#F44336','#795548','#2196F3','#EF5350','#8D6E63','#42A5F5'],
         
