@@ -4,42 +4,27 @@
     "statsGlobal": {
       "nbCommits": 359,
       "nbWordsMessage": 1378,
-      "nbAdd": 165933,
-      "nbDelete": 77831,
-      "nbTotal": 243764,
-      "nbWordsMessagePerCommit": "3.8",
-      "nbTotalPerCommit": "679.0"
+      "messages": "Question 8 Gitignore Update README.md Quickfix wrong package name refractoring Merge pull request #5 from Farenjihn/fb-14-gui\n\nBasic GUI Clean imports Package fixes Codestyle Merge branch 'master' into fb-14-gui Gitignore Add TestFX dependencies to gradle Merge branch 'fb-14-gui' of github.com:Farenjihn/pdg-heig into fb-14-gui Login form with mock actions Gradle with JavaFX API documentation template Merge branch 'master' of github.com:Farenjihn/pdg-heig Get last release each startup Update & Delete Pagination working Moved in package & gradle dependencies Merge branch 'master' of github.com:lognaume/amt-project Create new kebabShop from UI Merge branch 'master' of github.com:lognaume/amt-project App loading data from MySQL Added PHPMyAdmin Basic shops list with local datastore First app showing static Kebab shop Merge branch 'master' of github.com:lognaume/amt-project HTML -> JSP Test tags Typo... Separate script and before_deploy Before deploy script Merge branch 'master' of github.com:lognaume/amt-project Skip cleanup Looking for the good file path Merge branch 'master' of github.com:lognaume/amt-project Changed repo name Execute travis on travis branch Travis Travis Travis Travis Travis Travis Test travis Gradle Merge branch 'master' of github.com:lognaume/amt-project Initial web app project Initial commit Jouer moins vite Bon JAR Factorise UML Marges et JAR Maxime est dans le rapport Rapport Fix compteur temps J'avais tout cassé Merge branch 'master' of github.com:gluthier/mcr-projet UML Merge branch 'master' of github.com:gluthier/mcr-projet Texte recommencer Jar Un peu de nettoyage Merge branch 'master' of github.com:gluthier/mcr-projet Gradle build Merge pull request #3 from gluthier/guillaume\n\nGuillaume Merge remote-tracking branch 'origin/commentBranch' into guillaume Merge remote-tracking branch 'origin/master' into guillaume Nettoyage Vitesse du jeu parametrable Je fais de la merde avec les fichiers de l'IDE Revert \".idea par erreur\"\n\nThis reverts commit 0465ee1b4588b2954ab777b7e235b35b637d3984. .idea par erreur Meilleure gestion déplacement .. Slower Merge pull request #2 from gluthier/guillaume\n\nVisiteur Merge remote-tracking branch 'origin/master' into guillaume Better use visitor Cleanup Merge pull request #1 from gluthier/guillaume\n\nAdaptation JavaFX Merge branch 'guillaume' of github.com:gluthier/mcr-projet into guillaume Fade out obstacles Use JavaFX only Game speed can be changed Typo in package name Added Visitor.xml Merge branch 'master' of github.com:gluthier/mcr-projet Documents folder + presentation added Merge branch 'master' of github.com:gluthier/mcr-projet pres ODP Admin.jar Merge branch 'master' of github.com:gluthier/GEN-projet Section 7 Jar Merge branch 'master' of github.com:gluthier/GEN-projet Fixe source path Merge pull request #49 from gluthier/jar_packaging\n\nJar packaging Merge Merge remote-tracking branch 'origin/master' into jar_packaging Merge remote-tracking branch 'origin/master' into jar_packaging Everything is packageable Jar packaging of client Merge pull request #47 from gluthier/client_game\n\nClient game Quick ugly fix Revert \"Fix protocole\"\n\nThis reverts commit 9b857140dea523aad69c937725cd4eec29051257. Fix protocole Multiplayer working Merge remote-tracking branch 'origin/server-party-implementation' into client_game Fix Merge remote-tracking branch 'origin/server-party-implementation' into client_game Check roles client side Client update from server Merge pull request #46 from gluthier/lobby\n\nUgly lobby done Lobby working bis Lobby working Fix game creation SOUT on protocol Missing \\n in protocol New game should appear in lobby Quickfix Create new party First working Lobby Merge pull request #44 from gluthier/39-tcp-client\n\nLogin OK Login working ! Added good JUnit version in protocol Merge branch 'server-improvement' into 39-tcp-client Corrections SYNTAXIQUES Merge remote-tracking branch 'origin/server-improvement' into 39-tcp-client Protocol testing in progress, few fixes done TCP Client test and better integration of the various controllers TCP client done Tests in progress ClientController done TCP Client done Merge branch 'master' into 39-tcp-client Client in progress TCP Client in progress Merge remote-tracking branch 'origin/master' into 39-tcp-client Merge remote-tracking branch 'origin/Server' into 39-tcp-client External GameController & grid Merge remote-tracking branch 'origin/master' into 19-obstacle-interaction new MainApp gitignore IntelliJ Fixed collision between groups Merge pull request #21 from gluthier/19-obstacle-interaction\n\nCollision OK Clean import Merge branch '19-obstacle-interaction' of github.com:gluthier/GEN-projet into 19-obstacle-interaction Collision OK fixes #19 Collision OK Funny looser text Merge branch 'skier' of github.com:gluthier/GEN-projet into skier Fixed collisionWithEdge() Merge pull request #17 from gluthier/issue-8-dynamic-sprite\n\nIssue 8 dynamic sprite done Comments Moved images sources to lighten the jar JavaFX Tests done, still exceptions JavaFX tests Working, TODO: Tests, comments Merge branch 'issue-8-dynamic-sprite' of github.com:gluthier/GEN-projet into issue-8-dynamic-sprite Cleanup Refractor Moving to Grid class instead of GridPane Refractoring in progress First working half dynamically game scene Load dynamically background image (for pane) Merge pull request #13 from gluthier/issue-8-dynamic-sprite\n\nIssue 8 dynamic sprite Wrong logo URL Merge branch 'master' of github.com:gluthier/GEN-projet Javafxpackager has be renamed Javapackager Improve resolution On rentre dans le placard Merge branch 'master' of github.com:gluthier/GEN-projet Rapport API Merge branch 'master' of github.com:gluthier/GEN-projet Rapport API Merge branch 'master' of github.com:gluthier/GEN-projet RM pdf Merge branch 'maxime' Merge branch 'master' of github.com:gluthier/GEN-projet Revert \"Merge branch 'master' of github.com:gluthier/GEN-projet\"\n\nThis reverts commit 19e89f3505cebf55e66193e3c3ae1bd4dfcfaeb7, reversing\nchanges made to 25d2a795f52603656e8b0ccd4ae0cd36aee62ba0. Merge branch 'master' of github.com:gluthier/GEN-projet Rapport Diagramme activité Alignement Merge branch 'master' of github.com:gluthier/GEN-projet DB section done, beginning of comm protocol Merge branch 'master' of github.com:gluthier/GEN-projet DB schéma Espacement Rendu Merge branch 'master' of github.com:lognaume/projet-semestre4 Inclusion cahier charges Merge branch 'master' of github.com:lognaume/projet-semestre4 Correction Merge branch 'master' of github.com:lognaume/projet-semestre4 modification Merge branch 'master' of github.com:lognaume/projet-semestre4 Correction Correction orthographiques Merge Merge branch 'master' of github.com:lognaume/projet-semestre4 Liste des figures Merge branch 'master' of github.com:lognaume/projet-semestre4 Mise en page Merge branch 'master' of github.com:lognaume/projet-semestre4 mise en page Merge branch 'master' of github.com:lognaume/projet-semestre4 Gantt final Merge branch 'master' of github.com:lognaume/projet-semestre4 Fix typo Fix history Merge branch 'master' of github.com:lognaume/projet-semestre4 Journal de travail Guillaume Merge branch 'master' of github.com:lognaume/projet-semestre4 Description technique Guillaume + modification annexes Export quickfix Merge pull request #140 from lognaume/fb-22-visualhistory\n\nFb 22 visualhistory Take symetry in account Fixes #22 Merge remote-tracking branch 'origin/master' into fb-22-visualhistory Cleanup & comments Visual history working Merge remote-tracking branch 'origin/master' into fb-22-visualhistory Merge remote-tracking branch 'origin/master' into fb-22-visualhistory Visual history in progress En cours Beginning Merge pull request #106 from lognaume/fb-13-history\n\nFb 13 history Merge remote-tracking branch 'origin/master' into fb-13-history Applied to all tools Merge remote-tracking branch 'origin/master' into fb-13-history Comment Merge remote-tracking branch 'origin/master' into fb-13-history History working Merge remote-tracking branch 'origin/master' into fb-13-history First working version for brush Merge remote-tracking branch 'origin/master' into fb-13-history First version Merge pull request #53 from lognaume/fb-26-copy-past\n\nFb 26 copy past Merge remote-tracking branch 'origin/master' into fb-26-copy-past AbstractTool Merge branch 'fb-26-copy-past' of github.com:lognaume/projet-semestre4 into fb-26-copy-past Merge remote-tracking branch 'origin/master' into fb-26-copy-past Copy/past OK fixes #26 Merge remote-tracking branch 'origin/master' into fb-26-copy-past rm idea file Cleanup Copy / past done. Fixes #26 Selection copy / past done Copy / past working with selection Copy / past from selection almost done Copy / past working with layers. Best exception management needed Merge remote-tracking branch 'origin/master' into fb-26-copy-past First implementation Merge remote-tracking branch 'origin/master' into fb-7-gestion-couleurs Merge branch 'master' into fb-7-gestion-couleurs Ignore IntelliJ files Revert \"Save color as Hue Saturation Brightness\"\n\nThis reverts commit d58146359297147ea029a41881d3f7433189bc41. Remove IDE config file.. Save color as Hue Saturation Brightness Merge remote-tracking branch 'origin/master' into fb-7-gestion-couleurs First version of popup oups Fixed Merge pull request #31 from lognaume/fb-3-interface\n\nFb 3 interface Comments First working interface with dynamic buttons Merge branch 'master' into fb-3-interface Create buttons dynamically Merge branch 'master' of github.com:lognaume/projet-semestre4 Added the project meister Typo bro Ajout GridPane Commit bidon Test Travis Empty project with Hello World example from Maven Organisation Répart Planning GANTT Merge branch 'master' of github.com:lognaume/projet-semestre2 Merge branch 'master' of github.com:lognaume/projet-semestre2 Merge branch 'master' of github.com:lognaume/projet-semestre2 Merge branch 'master' of github.com:lognaume/projet-semestre2 Merge branch 'cahier_charges' Mockups arrangement Mockups Création documents base Update README.md Report done Report done Merge Report in progress Gitignore Cleanup Modified startup script to inject ENV variables in PHP template and dynamically configure apache Loading locations using ajax Modified docker images to install vim Docker image for apache reverse proxy. WARNING: IP HARDCODED Return list of locations gitignore Added express-image Docker image static HTML with apache+php working and validated Initial commit Transformers done DFS done Application done UpperCase filter done & passing tests File numbering done & passing test getNextLine done & passing tests Implementation of IInstrument, Trumpet and Flute according to specification Labo done Best error management Comments All tests passing V2 working except 1 test Merge remote-tracking branch 'upstream/fb-lab02-v2-tests' into fb-lab02-v2-impl Fb lab02 v2 contrib (#159)\n\n* Implementation V1\r\n\r\n* Added 2 tests\r\n\r\n* Tests for protocol V2\r\n\r\n* Revert \"Added 2 tests\"\r\n\r\nThis reverts commit 243fa30cdd3e2f6a80f1144d72ab038b2701378a.\r\n\r\n* Revert \"Implementation V1\"\r\n\r\nThis reverts commit 4c557752291df3bdd3255726f66b11b93e2ad28d. Merge branch 'master' into fb-lab02-v2-impl Revert \"Implementation V1\"\n\nThis reverts commit 4c557752291df3bdd3255726f66b11b93e2ad28d. Revert \"Added 2 tests\"\n\nThis reverts commit 243fa30cdd3e2f6a80f1144d72ab038b2701378a. Tests for protocol V2 Use static commands Merge remote-tracking branch 'upstream/fb-lab02-v2-tests' into fb-lab02-v2-contrib Added 2 tests Implementation V1 Readme Update config Implementation Leprechaun Comment New test passing Merge remote-tracking branch 'upstream/master' First test passed Planning example Initial commit Merge branch 'master' of github.com:gluthier/GEN-projet Application bidon Gitignore Gitignore Gitignore Rapport Gitignore Merge branch 'master' of github.com:gluthier/GEN-projet gitignore Fonctionnement général terminé Modifications selon retour Miguel Rapport Rapport gitignore Merge branch 'master' of github.com:gluthier/GEN-projet Rapport Gitignore Rename ",
+      "nbWordsMessagePerCommit": "3.8"
     },
     "stats": {
       "Java": {
         "language": "Java",
         "nbCommit": 343,
         "nbWordsMessage": 1315,
-        "nbAdd": 91619,
-        "nbDelete": 19197,
-        "nbTotal": 110816,
-        "nbWordsMessagePerCommit": "3.8",
-        "nbTotalPerCommit": "323.1"
+        "nbWordsMessagePerCommit": "3.8"
       },
       "CSS": {
         "language": "CSS",
         "nbCommit": 15,
         "nbWordsMessage": 61,
-        "nbAdd": 74137,
-        "nbDelete": 58617,
-        "nbTotal": 132754,
-        "nbWordsMessagePerCommit": "4.1",
-        "nbTotalPerCommit": "8850.3"
+        "nbWordsMessagePerCommit": "4.1"
       },
       "JavaScript": {
         "language": "JavaScript",
         "nbCommit": 1,
         "nbWordsMessage": 2,
-        "nbAdd": 177,
-        "nbDelete": 17,
-        "nbTotal": 194,
-        "nbWordsMessagePerCommit": "2.0",
-        "nbTotalPerCommit": "194.0"
+        "nbWordsMessagePerCommit": "2.0"
       }
     }
   },
@@ -48,116 +33,74 @@
     "statsGlobal": {
       "nbCommits": 153,
       "nbWordsMessage": 517,
-      "nbAdd": 667714,
-      "nbDelete": 42896,
-      "nbTotal": 710610,
-      "nbWordsMessagePerCommit": "3.4",
-      "nbTotalPerCommit": "4644.5"
+      "messages": "commenté it just works fonctonnelle, plus qu'à faire le check qui empêche d'entrer une durée supérieure à la taille de la vidéo ui vide terminée bleeeh 2 boutons init minor correction in readme Update README.md\n\ndownload link Update README.md Update README.md jar files added project and output files v1 Initial commit Create README.md Create LICENSE mispelling Merge branch 'master' of https://github.com/Bertral/CoR executable ajouté rapport recompilé uml fix Merge branch 'master' of https://github.com/Bertral/CoR présentation + fix uml executable ajouté rapport v1 terminée, ajout du constructeur privé pour la classe colorUtils début rapport cleaning file structure constructeurs ajoutés à l'uml uml terminé début d'uml commenté 50% commenté + refactor ajout d'assets manquants début de commentage et refactoring du spawner terminé, à commenter Refactor terminé, TODO : prisme (nouvelle entité) + doc + fix hitboxes bleh Merge remote-tracking branch 'origin/master' bleh dernière version de CoRe faisant rebondir les tirs modif specs Merge branch 'master' of https://github.com/Bertral/CoR uml clarification du main sprite manquant ajouté pause (SPACEBAR), restart (R), explosions ! version alpha fonctionnelle sprites ajoutés pushé opti des étoiles joueur et mouvement, étoiles en background idée 2 approuvée par l'assistant interface ajoutée Exemple pour la présentation intermédiaire ajouté init Update .gitignore Initial commit tours infinis arret d'urgence documenté fonctionnel, à documenter, revoir l'arrêt d'urgence (il ne semble pas mettre fin aux threads) seemsgood classe locothread ajoutée bite trajectoire ne plante plus au démarrage gigitnore update init Delete .gitignore Initial commit Update README.md readme readme done Initial commit trumpet implemented nettoyage et commentaires tous les tests passent uppercase implémenté utils implémenté DFS passe les tests validated ! presque merge impl v2 V1+V2 passent les tests Merge branch 'fb-lab02-v2-tests' of https://github.com/SoftEng-HEIGVD/Teaching-HEIGVD-RES-2017-Labo-02 into v2-impl\n\n# Conflicts:\n#\t.gitignore tests unitaires ajoutés pour le groupe Friant et Stalder (#86)\n\n* Roulette V1 Impl functionnal\r\n\r\n* ???\r\n\r\n* tests unitaires ajoutés\r\n\r\n* Changes, import of the right version protocol... rollback partiel v1 port 2613, ordre de messages de loadstudents dwpoejfowaihgeéiaw Delete QuizRouletteServer-test.iml Delete QuizRouletteServer-code.iml Delete QuizRouletteServer-build.iml added ByeCommandResponse added LoadCommandResponse correction protocole listStudents clientv2 impl Delete RouletteV2GaussianBlursTest.java Delete RouletteV2JulienBrechetTest.java Merge branch 'fb-lab02-v2-tests' of https://github.com/SoftEng-HEIGVD/Teaching-HEIGVD-RES-2017-Labo-02 Merge branch 'master' of https://github.com/Bertral/Teaching-HEIGVD-RES-2017-Labo-HTTPInfra terminé correction mineure finito Merge branch 'master' of https://github.com/Bertral/Teaching-HEIGVD-RES-2017-Labo-HTTPInfra task4 terminée rapport task 4 task3 report task 2 rapport task1 ajout report.md task3 terminée détail rapport task2 task1 done rendu fuckshitfuckingshittycunt gitignore fix Initial commit refonte pagination/tri/filtre pour optimiser (et adhérer au exigences du prof) correction titre des pages README écrit, plus qu'à rendre commenté, terminé génération, ajout et affichage fonctionnels connexion db fonctionnelle dans docker ! wildfly console toujours inaccessible dans docker fuck you configsuccess.jsp TODO retiré réussi à récupérer un int nottoyage, création des pages de base scripts not found fixed nouveau template, plus qu'à faire tout le reste test journal antoine import inutilisé retiré fixed warnings de maven optimisation mineure génération d'anagrammes terminée recherche dans le dico fonctionnelle recherche dans le dico fonctionnelle TST commenté, champs \"Authors : Antoine Friant\" retirés TST implémenté, junit installé Merge remote-tracking branch 'origin/master' modules créés project init Merge branch 'master' of https://github.com/c-meier/HEIG-2017-PDG-WORDOFF init de la liste des outils à utiliser ajout du chat et du système de monaie à la plannif plannif initiale Directives Create README.md ",
+      "nbWordsMessagePerCommit": "3.4"
     },
     "stats": {
       "C++": {
         "language": "C++",
         "nbCommit": 20,
         "nbWordsMessage": 66,
-        "nbAdd": 14991,
-        "nbDelete": 283,
-        "nbTotal": 15274,
-        "nbWordsMessagePerCommit": "3.3",
-        "nbTotalPerCommit": "763.7"
+        "nbWordsMessagePerCommit": "3.3"
       },
       "Java": {
         "language": "Java",
         "nbCommit": 97,
         "nbWordsMessage": 340,
-        "nbAdd": 503243,
-        "nbDelete": 8777,
-        "nbTotal": 512020,
-        "nbWordsMessagePerCommit": "3.5",
-        "nbTotalPerCommit": "5278.6"
+        "nbWordsMessagePerCommit": "3.5"
       },
       "JavaScript": {
         "language": "JavaScript",
         "nbCommit": 6,
         "nbWordsMessage": 10,
-        "nbAdd": 363,
-        "nbDelete": 38,
-        "nbTotal": 401,
-        "nbWordsMessagePerCommit": "1.7",
-        "nbTotalPerCommit": "66.8"
+        "nbWordsMessagePerCommit": "1.7"
       },
       "CSS": {
         "language": "CSS",
         "nbCommit": 15,
         "nbWordsMessage": 34,
-        "nbAdd": 57095,
-        "nbDelete": 17,
-        "nbTotal": 57112,
-        "nbWordsMessagePerCommit": "2.3",
-        "nbTotalPerCommit": "3807.5"
+        "nbWordsMessagePerCommit": "2.3"
       },
       "HTML": {
         "language": "HTML",
         "nbCommit": 15,
         "nbWordsMessage": 67,
-        "nbAdd": 92022,
-        "nbDelete": 33781,
-        "nbTotal": 125803,
-        "nbWordsMessagePerCommit": "4.5",
-        "nbTotalPerCommit": "8386.9"
+        "nbWordsMessagePerCommit": "4.5"
       }
     }
   },
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 263,
-      "nbWordsMessage": 1042,
-      "nbAdd": 570100,
-      "nbDelete": 436031,
-      "nbTotal": 1006131,
-      "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "3825.6"
+      "nbCommits": 264,
+      "nbWordsMessage": 1046,
+      "messages": "Initial commit, basic Android Studio project more cleaning cleaning pep8 find_games now handles multiple red cartridges find_game now handles stream video input initial file pep8 more tests initial commit feur small corrections added modified by Merge branch 'master' of github.com:BasileChatillon/Teaching-HEIGVD-RES-2017-Labo-02 deleted useless import comments all tests for V1 implementation test comment README clarification correction update Update README-md correction of method for the ranodm generation of groups update modified sender and receiver handling in mail body Merge branch 'master' of github.com:Rhod3/Mail_Spammer working spammer+ Create README.md added group creator, working reading email adresses from file added spam handler added group handler added example data initial commit, mail sender working Merge branch 'master' of github.com:Rhod3/Mail_Spammer gitignore Initial commit final commit Small corrections and delete useless functions Proper link to access ressources Handle new location of dictionary file New proper location for dictionary file Merge branch 'pdg19_dictionary' of https://github.com/Farenjihn/pdg-heig into pdg19_dictionary Added a way to handle different dictionary language. Also added standart File.separator for the path Simple function to permutate a string Dictionary class implemented, we can check if a word is in the dictionary. Basic Ternary Search Tree implementation Added files containing letters frequency and concrete list of allowed words check.log finally working update correction in the js structure Dockerfiles prototype of auditor.js first prototype for musician.js app passing test More detailed comments File separator + delete some comments more doc doc UpperCase filter ok transformers tests ok application pass tests correction in the DFS explorer Utils pass tests FileNumbering passing tests UpperCaseFilterWriter DFSFileExplorer final commit, not everything is working tests pass created eRemoverStreamProcessor Heroku tweak ReadMe Cleared debug output Simple ReadMe created Merge branch 'master' of github.com:Rhod3/TWEB2017-Github-Analytics-Server Create README.md Added Procfile to fix a bug in Heroku Heroku tweak Fixed some socket hang up bug Heroku prep Eslint small fix Fixed bug in test wip Heroku tweaking Code cleaning Agent can now update file. Commit page now works with pagination Correctly handle pagination for repos fetching Corrected data format Data calculation completed Cleaning Complete data creation Simple data creation Work In Progress, data calculation for all commits Function now handles repo languages Function to get all commits from one user (and test for this function Deleted github-creds Update .gitignore Agent implemented, can now fetch all repos from a user Cleaning node_modules Added gitignore Async with callback(2): simple client.js implementation, passing test Wrote simple client.js test Added mocha, chai and dirty-chai to dev dependencies Initial nodejs structure Initial commit report final update rapport done Traefik ok first try to configure traefik update rapport demo ready report part 1 and 2a personal content ok update report Modified startup script to include ip adress of static and dynamic site as ENV variables correction of apache2-foregrounf to respect the new config methodology Merge branch 'fb-ajax-jquery' into fb-dynamic-configuration step 4 operationnal config-template.php draft step 5b, created required file, not tested yet report for step 4, not functionnal yet Step3c, image apache-reverse-proxy done. WARNING: IP HARDCODED doc step 3b fin du rapport step 2 update rapport exemple students exemple génération de students aléatoire express app example end of video 2b: simple node app demo added report added free css template config Dockerfile Updated Data 2017-10-21 11:31:01 Updated Data 2017-10-21 11:17:10 Updated Data 2017-10-21 10:47:53 Updated Data 2017-10-21 10:20:47 Updated Data 2017-10-21 10:08:41 Updated Data 2017-10-21 09:57:51 Updated Data 2017-10-21 09:43:32 Updated Data 2017-10-21 09:23:16 Updated Data 2017-10-21 09:10:08 Updated Data 2017-10-21 08:27:53 Updated Data 2017-10-21 08:14:53 Updated Data 2017-10-21 07:47:01 Updated Data 2017-10-21 07:34:47 Updated Data 2017-10-21 07:23:39 Updated Data 2017-10-21 07:07:45 Updated Data 2017-10-21 06:44:32 Updated Data 2017-10-21 06:17:35 Updated Data 2017-10-21 05:52:05 Updated Data 2017-10-21 05:26:10 Updated Data 2017-10-21 05:12:02 Updated Data 2017-10-21 04:57:55 Updated Data 2017-10-21 04:31:50 Updated Data 2017-10-21 04:15:47 Updated Data 2017-10-21 04:02:24 Updated Data 2017-10-21 03:48:14 Updated Data 2017-10-21 03:33:20 Updated Data 2017-10-21 03:21:12 Updated Data 2017-10-21 03:05:16 Updated Data 2017-10-21 02:48:59 Updated Data 2017-10-21 02:37:15 Updated Data 2017-10-21 02:23:54 Updated Data 2017-10-21 02:12:50 Updated Data 2017-10-21 01:43:46 Updated Data 2017-10-21 01:27:36 Updated Data 2017-10-21 01:13:35 Updated Data 2017-10-21 00:57:36 Updated Data 2017-10-21 00:50:13 Merge branch 'master' of github.com:Rhod3/TWEB2017-Github-Analytics Fix Updated Data 2017-10-21 00:40:20 Updated Data 2017-10-21 00:40:10 Merge branches 'master' and 'master' of github.com:Rhod3/TWEB2017-Github-Analytics Fixes word cloud Updated Data 2017-10-21 00:21:26 Updated Data 2017-10-21 00:07:08 Updated Data 2017-10-20 23:48:08 Updated Data 2017-10-20 23:35:01 Updated Data 2017-10-20 23:11:48 Updated Data 2017-10-20 22:57:50 Updated Data 2017-10-20 22:35:42 Updated Data 2017-10-20 22:13:26 Updated Data 2017-10-20 21:59:38 Updated Data 2017-10-20 21:48:14 Updated Data 2017-10-20 21:29:03 Updated Data 2017-10-20 21:05:26 Updated Data 2017-10-20 20:49:01 Updated Data 2017-10-20 20:30:43 Updated Data 2017-10-20 20:13:07 Updated Data 2017-10-20 19:55:46 Updated Data 2017-10-20 19:40:32 Merge branch 'master' of github.com:Rhod3/TWEB2017-Github-Analytics First try for word cloud Updated Data 2017-10-20 19:17:56 Updated Data 2017-10-20 19:17:42 Updated Data 2017-10-20 19:05:24 Small fixes v2 Small fixes Merge branch 'master' of github.com:Rhod3/TWEB2017-Github-Analytics Try to only display message stats Updated Data 2017-10-20 18:37:22 Updated Data 2017-10-20 18:12:05 readme Updated Data 2017-10-20 17:57:10 Updated Data 2017-10-20 17:44:55 Updated Data 2017-10-20 17:34:43 Updated Data 2017-10-20 16:06:51 Update data.json Update data.json Updated Data 2017-10-20 08:04:06 Updated Data 2017-10-20 02:35:17 Updated Data 2017-10-19 20:49:47 Updated Data 2017-10-19 17:51:04 Updated Data 2017-10-19 16:25:21 Updated Data 2017-10-19 15:36:53 Updated Data 2017-10-19 15:30:31 Updated Data 2017-10-19 15:12:27 Updated Data 2017-10-19 15:00:24 Updated Data 2017-10-19 14:42:28 Updated Data 2017-10-19 13:36:13 Updated Data 2017-10-19 13:24:35 Updated Data 2017-10-19 12:59:16 Update data.json Update data.json Updated Data 2017-10-19 11:43:40 Updated Data 2017-10-18 15:48:27 Chart should now scale from 0 all the times Fixed bug that displayed old data into chart Updated Data 2017-10-17 17:53:20 Re-added wasadigi Updated Data 2017-10-17 17:37:52 Added user wasadigi to be processed by the crawler Updated Data 2017-10-17 17:33:43 Test with filled data User select and chart WIP14 Onchange function for the select Select should correctly be filled User select and chart WIP13 User select and chart WIP12 User select and chart WIP11 User select and chart WIP10 User select and chart WIP10 User select and chart WIP9 User select and chart WIP8 User select and chart WIP7 User select and chart WIP6 User select and chart WIP5 User select WIP4 User select WIP3 User select v2 Added select creation Visualisation v5 Visualisation v4 Visualisation v3 Visualisation v2 Data visualisation test little cleaning Fix docs Preparation for github.io Preparation for data visualisation Customised template Initial bootstrap template Added simple ReadMe ",
+      "nbWordsMessagePerCommit": "4.0"
     },
     "stats": {
-      "Python": {
-        "language": "Python",
-        "nbCommit": 9,
-        "nbWordsMessage": 23,
-        "nbAdd": 640,
-        "nbDelete": 186,
-        "nbTotal": 826,
-        "nbWordsMessagePerCommit": "2.6",
-        "nbTotalPerCommit": "91.8"
-      },
       "Java": {
         "language": "Java",
         "nbCommit": 53,
         "nbWordsMessage": 219,
-        "nbAdd": 66361,
-        "nbDelete": 823,
-        "nbTotal": 67184,
-        "nbWordsMessagePerCommit": "4.1",
-        "nbTotalPerCommit": "1267.6"
+        "nbWordsMessagePerCommit": "4.1"
+      },
+      "Python": {
+        "language": "Python",
+        "nbCommit": 9,
+        "nbWordsMessage": 23,
+        "nbWordsMessagePerCommit": "2.6"
       },
       "JavaScript": {
         "language": "JavaScript",
         "nbCommit": 43,
         "nbWordsMessage": 163,
-        "nbAdd": 397566,
-        "nbDelete": 394272,
-        "nbTotal": 791838,
-        "nbWordsMessagePerCommit": "3.8",
-        "nbTotalPerCommit": "18414.8"
+        "nbWordsMessagePerCommit": "3.8"
       },
       "CSS": {
         "language": "CSS",
         "nbCommit": 26,
         "nbWordsMessage": 118,
-        "nbAdd": 31694,
-        "nbDelete": 2713,
-        "nbTotal": 34407,
-        "nbWordsMessagePerCommit": "4.5",
-        "nbTotalPerCommit": "1323.3"
+        "nbWordsMessagePerCommit": "4.5"
       }
     }
   }
