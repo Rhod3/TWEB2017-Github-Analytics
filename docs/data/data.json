@@ -2,24 +2,24 @@
   "lognaume": {
     "user": "lognaume",
     "statsGlobal": {
-      "nbCommits": 358,
-      "nbWordsMessage": 1373,
-      "nbAdd": 165922,
-      "nbDelete": 77829,
-      "nbTotal": 243751,
+      "nbCommits": 359,
+      "nbWordsMessage": 1378,
+      "nbAdd": 165933,
+      "nbDelete": 77831,
+      "nbTotal": 243764,
       "nbWordsMessagePerCommit": "3.8",
-      "nbTotalPerCommit": "680.9"
+      "nbTotalPerCommit": "679.0"
     },
     "stats": {
       "Java": {
         "language": "Java",
-        "nbCommit": 342,
-        "nbWordsMessage": 1310,
-        "nbAdd": 91608,
-        "nbDelete": 19195,
-        "nbTotal": 110803,
+        "nbCommit": 343,
+        "nbWordsMessage": 1315,
+        "nbAdd": 91619,
+        "nbDelete": 19197,
+        "nbTotal": 110816,
         "nbWordsMessagePerCommit": "3.8",
-        "nbTotalPerCommit": "324.0"
+        "nbTotalPerCommit": "323.1"
       },
       "CSS": {
         "language": "CSS",
@@ -110,13 +110,13 @@
   "Rhod3": {
     "user": "Rhod3",
     "statsGlobal": {
-      "nbCommits": 218,
-      "nbWordsMessage": 862,
-      "nbAdd": 569109,
-      "nbDelete": 435053,
-      "nbTotal": 1004162,
+      "nbCommits": 219,
+      "nbWordsMessage": 866,
+      "nbAdd": 569137,
+      "nbDelete": 435081,
+      "nbTotal": 1004218,
       "nbWordsMessagePerCommit": "4.0",
-      "nbTotalPerCommit": "4606.2"
+      "nbTotalPerCommit": "4585.5"
     },
     "stats": {
       "Java": {
