@@ -70,14 +70,15 @@ function fillData(currentUser) {
     });
 
     console.log(json[currentUser].statsGlobal.messages);
-    
+
+    // Creation of the word cloud
     var myConfig = {
       type: 'wordcloud',
       options: {
         text: json[currentUser].statsGlobal.messages,
         minLength: 5,
-        ignore: [],
-        maxItems: 40,
+        ignore: ["Merge", "branch", "\'master\'"],
+        maxItems: 50,
         aspect: 'flow-center',
         rotate: true,
         colorType: 'palette',
