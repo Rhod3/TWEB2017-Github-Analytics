@@ -3,9 +3,6 @@ let messageChart;
 
 function fillData(currentUser) {
   $.getJSON('data/data.json', (json) => {
-    console.log('User: ' + currentUser);
-    console.log('Json: ' + json);
-    console.log('Json current user: ' + json[currentUser]);
     // Generate texts
     $('#messageStatsTitle').html(`
       How long are ${currentUser} commit message ?
