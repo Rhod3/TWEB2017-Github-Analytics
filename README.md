@@ -3,6 +3,8 @@ This repository contains the client side of the TWEB2017 Github Analytics projec
 
 You can access the main client page on the dedicated [Github.io page](https://rhod3.github.io/TWEB2017-Github-Analytics/).
 
+If you're from the TWEB course, you can find a small report [here](https://github.com/Rhod3/TWEB2017-Github-Analytics/blob/master/report/report.md).
+
 ## What does the code do ?
 It displays data from a json file uploaded by the [agent / crawler](https://github.com/Rhod3/TWEB2017-Github-Analytics-Server) running on [Heroku](https://www.heroku.com/).
 
