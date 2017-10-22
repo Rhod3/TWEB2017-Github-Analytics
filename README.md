@@ -1,5 +1,5 @@
 # TWEB2017-Github-Analytics
-This repository contains the client side of the TWEB2017 Github Analytics project, which in our case focuses the commit messages of a user.
+This repository contains the client side of the TWEB2017 Github Analytics project, which in our case focuses on the commit messages of a user.
 
 You can access the main client page on the dedicated [Github.io page](https://rhod3.github.io/TWEB2017-Github-Analytics/).
 
