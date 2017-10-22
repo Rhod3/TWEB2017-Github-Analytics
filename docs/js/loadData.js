@@ -2,8 +2,10 @@
 let messageChart;
 
 function fillData(currentUser) {
-  // const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
+    console.log('User: ' + currentUser);
+    console.log('Json: ' + json);
+    console.log('Json current user: ' + json[currentUser]);
     // Generate texts
     $('#messageStatsTitle').html(`
       How long are ${currentUser} commit message ?
@@ -120,6 +122,7 @@ function initSelect() {
     }
 
     $('#userSelect').on('change', () => {
+      console.log('Listener : ' + this.value);
       fillData(this.value);
     });
   });

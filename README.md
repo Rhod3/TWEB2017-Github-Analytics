@@ -13,3 +13,5 @@ Basically, you can select a user from a pool of already processed users. A few s
 
 ## How can I run it locally ?
 To run the client side locally, you just have to fork this repo and setup your Github.io page to use the ressource of the *docs/* folder.
+
+## I don't see my Github username
