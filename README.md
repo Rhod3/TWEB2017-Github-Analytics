@@ -10,7 +10,7 @@ It displays data from a json file uploaded by the [agent / crawler](https://gith
 
 ## What does it display ?
 Basically, you can select a user from a pool of already processed users. A few stats will then be displayed:
-* A summary of how many words are contained in your commit message. A graph also displays the mean of how much words you put per commit message, sorted by language.
+* A summary of how many words are contained in your commit message. A graph also displays the average number of words you put per commit message, sorted by language.
 * A word cloud of all the commit messages from the user.
 
 ## How can I run it locally ?
