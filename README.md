@@ -14,4 +14,16 @@ Basically, you can select a user from a pool of already processed users. A few s
 ## How can I run it locally ?
 To run the client side locally, you just have to fork this repo and setup your Github.io page to use the ressource of the *docs/* folder.
 
-## I don't see my Github username
+## I don't see my Github username on your website, can I add it ?
+For now, you can only do it in an non user-friendly way: you'll have to do it with a pull request.
+
+The PR will contain only one modification: adding your name in the [*docs/data/data.json*](https://github.com/Rhod3/TWEB2017-Github-Analytics/blob/master/docs/data/data.json) file, like so:
+```
+{
+  "YOUR_USERNAME": {},
+  ...
+  ..
+  .
+}
+```
+Your username will then appear on the website once I accept the PR and the agent has runned at least once, which happen once a day.
