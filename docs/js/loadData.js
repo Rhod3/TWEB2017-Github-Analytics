@@ -121,8 +121,9 @@ function initSelect() {
       }));
     }
 
-    $('#userSelect').on('change', () => {
-      console.log('Listener : ' + this.value);
+    $('#userSelect').on('change', function() {
+      console.log('Listener this: ' + this);
+      console.log('Listener this.value: ' + this.value);
       fillData(this.value);
     });
   });
