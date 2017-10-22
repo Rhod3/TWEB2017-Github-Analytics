@@ -1,30 +1,9 @@
-function initSelect() {
-  $.getJSON('data/data.json', (json) => {
-    const users = Object.keys(json);
-    console.log(users);
-
-    for (var i in users) {
-      console.log(users[i]);
-      $('#userSelect').append($('<option>', { 
-        value: users[i],
-        text : users[i] 
-      }));
-    }
-
-    $('#userSelect').on('change', function() {
-      fillData(this.value);
-    });
-  });
-}
-
 // Keep reference to chart
-var statsChart;
-var messageChart;
+let messageChart;
 
 function fillData(currentUser) {
   // const currentUser = "Rhod3";
   $.getJSON('data/data.json', (json) => {
-
     // Generate texts
     $('#messageStatsTitle').html(`
       How long are ${currentUser} commit message ?
@@ -44,42 +23,46 @@ function fillData(currentUser) {
     // Generate graph with chart.js
 
     // Data for the message chart
-    var ctx = document.getElementById('commitMessageChart').getContext('2d');
-    let userMessageData = {
+    const ctx = document.getElementById('commitMessageChart').getContext('2d');
+    const userMessageData = {
       labels: [],
       datasets: [{
         label: 'Number of words per commit',
         data: [],
-      }]
+      }],
     };
-    for (var key in json[currentUser].stats) {
-      userMessageData.labels.push(key);
-      userMessageData.datasets[0].data.push(json[currentUser].stats[key].nbWordsMessagePerCommit);
+
+    const languages = Object.keys(json[currentUser].stats);
+    for (let i = 0; i < languages.size; i += 1) {
+      userMessageData.labels.push(languages[i]);
+      userMessageData.datasets[0].data
+        .push(json[currentUser].stats[languages[i]].nbWordsMessagePerCommit);
     }
+
     // Destroy the previous chart if it exists
     if (messageChart) {
       messageChart.destroy();
     }
     // Create the chart
     messageChart = new Chart(ctx, {
-        type: 'bar',
-        backgroundColor : 'blue',
-        data: userMessageData,
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
+      type: 'bar',
+      backgroundColor: 'blue',
+      data: userMessageData,
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+            },
+          }],
+        },
+      },
     });
 
     console.log(json[currentUser].statsGlobal.messages);
 
     // Creation of the word cloud
-    var myConfig = {
+    const myConfig = {
       type: 'wordcloud',
       options: {
         text: json[currentUser].statsGlobal.messages,
@@ -88,37 +71,56 @@ function fillData(currentUser) {
         maxItems: 60,
         aspect: 'flow-center',
         colorType: 'palette',
-        palette: ['#D32F2F','#5D4037','#1976D2','#E53935','#6D4C41','#1E88E5','#F44336','#795548','#2196F3','#EF5350','#8D6E63','#42A5F5'],
-        
+        palette: ['#D32F2F', '#5D4037', '#1976D2', '#E53935', '#6D4C41', '#1E88E5', '#F44336', '#795548', '#2196F3', '#EF5350', '#8D6E63', '#42A5F5'],
+
         style: {
           fontFamily: 'Lato',
-          
+
           hoverState: {
             backgroundColor: '#D32F2F',
             borderRadius: 2,
-            fontColor: 'white'
+            fontColor: 'white',
           },
           tooltip: {
             text: '%text: %hits',
             visible: true,
-            
+
             alpha: 0.9,
             backgroundColor: '#1976D2',
             borderRadius: 2,
             borderColor: 'none',
             fontColor: 'white',
             fontFamily: 'Georgia',
-            textAlpha: 1
-          }
-        }
+            textAlpha: 1,
+          },
+        },
       },
     };
-    
-    zingchart.render({ 
-      id: 'cloudWordChart', 
-      data: myConfig, 
-      height: 400, 
-      width: '100%' 
+
+    zingchart.render({
+      id: 'cloudWordChart',
+      data: myConfig,
+      height: 400,
+      width: '100%',
+    });
+  });
+}
+
+function initSelect() {
+  $.getJSON('data/data.json', (json) => {
+    const users = Object.keys(json);
+    console.log(users);
+
+    for (let i = 0; i < users.length; i += 1) {
+      console.log(users[i]);
+      $('#userSelect').append($('<option>', {
+        value: users[i],
+        text: users[i],
+      }));
+    }
+
+    $('#userSelect').on('change', () => {
+      fillData(this.value);
     });
   });
 }

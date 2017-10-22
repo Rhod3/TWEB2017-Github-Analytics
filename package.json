@@ -1,0 +1,29 @@
+{
+  "name": "tweb2017-github-analytics",
+  "version": "1.0.0",
+  "description": "This repository contains the client side of the TWEB2017 Github Analytics project, which in our case focuses the commit messages of a user.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "eslint": "^4.9.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rhod3/TWEB2017-Github-Analytics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rhod3/TWEB2017-Github-Analytics/issues"
+  },
+  "homepage": "https://github.com/Rhod3/TWEB2017-Github-Analytics#readme"
+}
