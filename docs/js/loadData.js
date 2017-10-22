@@ -35,7 +35,7 @@ function fillData(currentUser) {
     };
 
     const languages = Object.keys(json[currentUser].stats);
-    for (let i = 0; i < languages.size; i += 1) {
+    for (let i = 0; i < languages.length; i += 1) {
       userMessageData.labels.push(languages[i]);
       userMessageData.datasets[0].data
         .push(json[currentUser].stats[languages[i]].nbWordsMessagePerCommit);
@@ -60,8 +60,6 @@ function fillData(currentUser) {
         },
       },
     });
-
-    console.log(json[currentUser].statsGlobal.messages);
 
     // Creation of the word cloud
     const myConfig = {
@@ -121,9 +119,9 @@ function initSelect() {
       }));
     }
 
+    // Apparently browser dont handle the "() => {}" notation
+    // so we have to do it this way
     $('#userSelect').on('change', function() {
-      console.log('Listener this: ' + this);
-      console.log('Listener this.value: ' + this.value);
       fillData(this.value);
     });
   });
