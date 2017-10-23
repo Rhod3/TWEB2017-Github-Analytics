@@ -5,7 +5,7 @@ function fillData(currentUser) {
   $.getJSON('data/data.json', (json) => {
     // Generate texts
     $('#messageStatsTitle').html(`
-      How long are ${currentUser} commit message ?
+      How long are <a href="https://github.com/${currentUser}">${currentUser}</a> commit message ?
     `);
 
     $('#messageStats').html(`
