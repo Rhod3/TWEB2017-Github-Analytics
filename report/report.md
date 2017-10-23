@@ -21,7 +21,7 @@
 * *Extra effort has been put in the depth of the analysis
 (“you are not just sorting developers per commit
 count”).*
-    * The data we extract from our API call require a bit of processing so that we only have interesting informations in the file we upload on the client repo.
+    * The data we extract from our API calls require a bit of processing so that we only have interesting informations in the file we upload on the client repo.
 * *Extra effort has been put to make the app “sticky”
 and/or “viral”. There is something about it that makes
 it particularly original, fun. Or there is something that
